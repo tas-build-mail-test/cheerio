@@ -1298,7 +1298,7 @@ describe('$(...)', () => {
         expect($selection[0]).toBe($orange[0]);
         expect($selection[1]).toBe($pear[0]);
       });
-      it('contains the current selection', () => {
+      it.skip('contains the current selection', () => {
         const $selection = $orange.add('#fruits');
 
         expect($selection).toHaveLength(2);
