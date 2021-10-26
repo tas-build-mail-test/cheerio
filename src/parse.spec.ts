@@ -421,7 +421,7 @@ describe('parse', () => {
       );
     });
 
-    it('should pass the options for including the location info to parse5', () => {
+    it('ir should pass the options for including the location info to parse5', () => {
       const root = parse(
         '<p>Hello</p>',
         { ...defaultOpts, sourceCodeLocationInfo: true },
