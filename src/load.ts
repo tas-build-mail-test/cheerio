@@ -229,6 +229,7 @@ export function getLoad(
   };
 }
 
+//Changes
 function isNode(obj: any): obj is Node {
   return (
     !!obj.name ||
