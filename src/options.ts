@@ -40,6 +40,7 @@ const xmlModeDefault: InternalOptions = {
   xmlMode: true,
 };
 
+//Changes 2
 export function flatten(
   options?: CheerioOptions | null
 ): InternalOptions | undefined {
