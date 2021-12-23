@@ -1,17 +1,18 @@
 ---
 framework: jest
-postMerge:
-  pattern:
+postMerge: 
+  pattern: 
     - './src/**/*.spec.ts'
-  strategy:
+  strategy: 
     threshold: <5|100s|30m|6h>
     type: <commit|time>
 preMerge:
   pattern:
     - './src/**/*.spec.ts'
 preRun:
-  - npm i
+     command:
+        - npm i
 postRun:
-  - node --version
-  - node --version
-version: 2.0
+     command:
+        - node --version
+version: 2.1
