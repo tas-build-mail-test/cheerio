@@ -21,6 +21,7 @@ describe('deprecated APIs', () => {
    * $.parseHTML('<b>markup</b>');
    * ```
    */
+  
   describe('cheerio module', () => {
     describe('.parseHTML', () => {
       it('(html) : should preserve content', () => {
