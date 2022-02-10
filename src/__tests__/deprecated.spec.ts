@@ -79,6 +79,11 @@ describe('deprecated APIs', () => {
         cheerio.merge(arr1, arr2);
         expect(arr2).toHaveLength(3);
       });
+      
+      it('new (arraylike, arraylike) : should not modify the second array', () => {
+        cheerio.merge(arr1, arr2);
+        expect(arr2).toHaveLength(3);
+      });
 
       it('(arraylike, arraylike) : should handle objects that arent arrays, but are arraylike', () => {
         arr1 = {
