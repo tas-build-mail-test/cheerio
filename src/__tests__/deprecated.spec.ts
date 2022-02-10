@@ -328,6 +328,13 @@ describe('deprecated APIs', () => {
         );
         expect($.text($('a'))).toBe('This is  not a comment.');
       });
+      
+      it('new (cheerio object) : should omit comment nodes', () => {
+        const $ = cheerio.load(
+          '<a>This is <!-- a comment --> not a comment.</a>'
+        );
+        expect($.text($('a'))).toBe('This is  not a comment.');
+      });
 
       it('(cheerio object) : should include text contents of children recursively', () => {
         const $ = cheerio.load(
