@@ -45,6 +45,13 @@ describe('render', () => {
         '<someelem someattribute="something">hello</someelem>'
       );
     });
+    
+    it('new should not keep camelCase for new nodes', () => {
+      const str = '<g><someElem someAttribute="something">hello</someElem></g>';
+      expect(dom(str, { xml: false })).toBe(
+        '<someelem someattribute="something">hello</someelem>'
+      );
+    });
 
     it('should keep camelCase for new nodes', () => {
       const str = '<g><someElem someAttribute="something">hello</someElem></g>';
