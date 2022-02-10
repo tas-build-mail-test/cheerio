@@ -102,6 +102,7 @@ describe('deprecated APIs', () => {
         expect(arr2).toHaveLength(3);
       });
 
+      
       it('(?, ?) : should gracefully reject invalid inputs', () => {
         let ret: ArrayLike<unknown> | undefined = cheerio.merge([4], 3 as any);
         expect(ret).toBeFalsy();
