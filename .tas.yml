@@ -1,5 +1,6 @@
 ---
 framework: jest
+licenseTier: small
 preRun:
      command:
         - npm i
