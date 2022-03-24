@@ -5,10 +5,10 @@ preRun:
         - npm i
 preMerge:
   pattern:
-    - './src/**/*.spec.ts'
+    - './src/api/forms.spec.ts'
 postMerge: 
   pattern: 
-    - './src/**/*.spec.ts'
+    - './src/api/forms.spec.ts'
 postRun:
      command:
         - node --version
