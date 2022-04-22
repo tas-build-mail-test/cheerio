@@ -35,10 +35,6 @@ describe('$(...)', () => {
       ]);
     });
 
-    it('() : should not get disabled form controls', () => {
-      expect($('form#disabled').serializeArray()).toStrictEqual([]);
-    });
-
     it('() : should not get form controls with the wrong type', () => {
       expect($('form#submit').serializeArray()).toStrictEqual([
         {
@@ -134,10 +130,6 @@ describe('$(...)', () => {
   describe('.serialize', () => {
     it('() : should get form controls', () => {
       expect($('form#simple').serialize()).toBe('fruit=Apple');
-    });
-
-    it('() : should get nested form controls', () => {
-      expect($('form#nested').serialize()).toBe('fruit=Apple&vegetable=Carrot');
     });
 
     it('() : should not get disabled form controls', () => {
