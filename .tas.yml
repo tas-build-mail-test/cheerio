@@ -10,7 +10,4 @@ preMerge:
 postMerge: 
   pattern: 
     - './src/api/forms.spec.ts'
-postRun:
-     command:
-        - node --version
 version: 1.0
